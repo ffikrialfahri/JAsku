@@ -1,0 +1,85 @@
+.home-header {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.home-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.home-header p {
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+.services-grid {
+  display: grid;
+  /* Responsive grid: 1 col on mobile, 2 on tablet, 3 on desktop */
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem; /* Increased gap */
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Make cards in the same row equal height */
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.service-card-body {
+  flex-grow: 1; /* Allows footer to stick to the bottom */
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.service-card-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 1rem 0;
+}
+
+.service-card-footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f3f4f6;
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-align: right;
+}

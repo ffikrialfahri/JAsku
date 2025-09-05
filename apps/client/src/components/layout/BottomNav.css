@@ -1,0 +1,47 @@
+.bottom-nav {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #1f2937; /* Same as sidebar */
+  border-top: 1px solid #374151;
+  z-index: 1000;
+}
+
+.bottom-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af; /* Gray icon color */
+  text-decoration: none;
+  font-size: 0.75rem; /* Small text */
+  padding: 0.5rem;
+  flex-grow: 1; /* Distribute space evenly */
+  height: 100%;
+  transition: color 0.2s;
+}
+
+.bottom-nav-link.active {
+  color: #ffffff; /* White for active link */
+}
+
+/* Show only on mobile */
+@media (max-width: 768px) {
+  .bottom-nav {
+    display: block;
+  }
+}

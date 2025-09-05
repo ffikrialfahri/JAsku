@@ -1,0 +1,38 @@
+PS D:\WorkSpace\Express-Js\jasku> npm run dev
+
+> jasku@1.0.0 dev
+> concurrently "npm run start:server" "npm run start:client"
+
+[0] 
+[0] > jasku@1.0.0 start:server
+[0] > npm --prefix apps/server start
+[0] 
+[1]
+[1] > jasku@1.0.0 start:client
+[1] > npm --prefix apps/client run dev
+[1]
+[0] 
+[0] > server@1.0.0 start
+[0] > node src/index.js
+[0]
+[1] 
+[1] > client@0.0.0 dev
+[1] > vite
+[1]
+[0] [dotenv@17.2.2] injecting env (2) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+[1] 
+[1]   VITE v7.1.4  ready in 1034 ms
+[1]
+[1]   ➜  Local:   http://localhost:5173/
+[1]   ➜  Network: use --host to expose
+[0] PostgreSQL Connection has been established successfully.
+[0] All models were synchronized successfully.
+[0] Server is running on port 3001
+[0] column Service.status does not exist
+[0] column Service.status does not exist
+[0] column Service.status does not exist
+[0] column Service.status does not exist
+[0] column "status" does not exist
+[0] column "status" does not exist
+[0] column "status" of relation "services" does not exist
+

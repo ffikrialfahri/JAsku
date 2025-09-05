@@ -1,0 +1,30 @@
+/* General App Layout */
+.app-container {
+  display: flex;
+}
+
+.main-content {
+  flex-grow: 1;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content-padded {
+    padding: 2rem;
+}
+
+/* Desktop layout (when sidebar is visible) */
+.main-content.with-sidebar {
+  margin-left: 80px;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .main-content.with-sidebar {
+    margin-left: 0;
+  }
+
+  .main-content-padded {
+    padding: 1rem;
+    padding-bottom: 80px; /* Add padding to the bottom to avoid overlap with bottom nav */
+  }
+}
