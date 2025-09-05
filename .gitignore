@@ -1,0 +1,20 @@
+# Dependencies
+/node_modules
+/apps/client/node_modules
+/apps/server/node_modules
+
+# Environment variables
+.env
+
+# Build output
+/dist
+/build
+
+# User-requested ignores
+/SISTEM REQUIREMENT/
+INSTRUKSI.md
+error.txt
+
+# IDE / Editor specific
+.vscode/
+.idea/
